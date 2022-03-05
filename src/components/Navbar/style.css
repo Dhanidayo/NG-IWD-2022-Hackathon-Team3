@@ -1,0 +1,41 @@
+header {
+    padding: 2em 0;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.logo {
+    margin-right: 2em;
+    align-self: center;
+
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-right: 2em;
+}
+
+.nav__link {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav__item NavLink:hover {
+    opacity: .75;
+}

@@ -9,14 +9,14 @@ body {
 }
 
 .container--primary {
-  width: 96%;
-  max-width: 1440px;
+  width: 80%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .container--secondary {
-  width: 86%;
-  max-width: 1200px;
+  width: 70%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -31,4 +31,34 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.btn {
+  padding: .5em 1.5em;
+  font-size: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 769px) {
+  .btn {
+    padding: .25rem .7rem;
+    font-size: .6rem;
+  }
+}
+
+.btn:hover {
+  opacity: 0.8rem;
+}
+
+.btn--primary {
+  background: #4c1d95;
+  color: #fff;
+}
+
+.body-text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }

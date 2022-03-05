@@ -1,0 +1,76 @@
+.landing-page {
+    width: 100%;
+}
+
+#banner {
+    background: url("../../resources//images/Hero\ Background.png") no-repeat right center;
+    background-size: cover;
+    background-color: #e9e4ff;
+    height: 39.5rem;
+    padding: 2em 0;
+}
+
+/* .banner-contents-wrapper {
+    border: 4px solid green;
+}
+
+.banner-texts {
+    width: 40%;
+    border: 2px solid yellow;
+}
+
+.banner-image {
+    border: 2px solid red;
+} */
+
+/* .hero-image {
+    width: 372px;
+    height: 372px;
+} */
+
+.main-text {
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #4c1d95;
+}
+
+.main-para {
+    margin-bottom: 2em;
+}
+
+
+#benefits-section {
+    background-color: #f3f0ff;
+    padding: 2em 0;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    text-align: center;
+    color: #4c1d95;
+}
+
+.cards-container {
+    display: flex;
+}
+
+.flex-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 16rem;
+	height: 22.5rem;
+	background-color: #fff;
+	border: 1px solid #f5f5f5;
+	border-radius: 0.6em;
+	text-align: center;
+	/* box-shadow: 0px 13px 5px -10px #888; */
+	padding: 2em;
+}
+
+.illustration-image {
+    width: 120px;
+    height: 120px;
+}
