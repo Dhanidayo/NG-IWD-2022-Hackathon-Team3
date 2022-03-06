@@ -19,19 +19,21 @@ const BlogDetails = () => {
 
     return (
        < DefaultLayout>
+        <div className="container--primary">
+            { isPending && <div className="loading-text">Loading...</div> }
+            { error && <div>{ error }</div> }
+        </div>
+        { blog && (
         <div className="blog-details">
             <div className=" m-auto ">
-            { isPending && <div>Loading...</div> }
-            { error && <div>{ error }</div> }
-            { blog && (
-            <article>
-                <h2>{ blog.title }</h2>
-                <p className="author">Written by { blog.author }</p>
-                <div>{ blog.body }</div>
-            </article>      
-            )}
+                <article>
+                    <h2>{ blog.title }</h2>
+                    <p className="author">Written by { blog.author }</p>
+                    <div>{ blog.body }</div>
+                </article>
             </div>
-        </div>
+        </div>  
+        )}
        </DefaultLayout>
     );
 }
