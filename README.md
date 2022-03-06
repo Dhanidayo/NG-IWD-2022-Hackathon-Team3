@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# AFRO-IN-TECH WEB APPLICATION
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is hosting on Vercel with the following link: http://ng-iwd-2022-hackathon-team3.vercel.app/
+The Figma link to view the prototypes and wireframes for this project is: https://www.figma.com/file/mu3AH7o42YIgRSE9qUxDjZ/Hackathon?node-id=0%3A1
 
 ## Available Scripts
 
