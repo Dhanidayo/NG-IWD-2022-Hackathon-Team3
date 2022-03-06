@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import FontAwesome from "react-icons/fa";
 import { FaTwitter, FaFacebook } from "react-icons/fa";
 import "./style.css";
 

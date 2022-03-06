@@ -13,7 +13,6 @@ import mentortwo from "../../resources/images/Mentor 2.png";
 import mentorthree from "../../resources/images/Mentor 3.png";
 import mentorfour from "../../resources/images/Mentor 4.png";
 import mentorfive from "../../resources/images/Mentor 5.png";
-import FontAwesome from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
 const LandingPage = () => {
