@@ -78,3 +78,15 @@ img {
   line-height: 1.5rem;
   font-weight: 600;
 }
+
+.body-text-thin {
+  font-weight: normal;
+  font-size: 1.2rem;   
+}
+
+/* .blog-text-mid {
+} */
+
+.sub-heading--black {
+  font-size: 1.8rem;
+}

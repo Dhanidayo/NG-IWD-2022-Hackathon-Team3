@@ -42,6 +42,10 @@ header {
     opacity: 0.8;
 }
 
+a.active {
+    color: #7c3aed;
+}
+
 /* span.caret-icon {
     margin-top: .3em;
 } */

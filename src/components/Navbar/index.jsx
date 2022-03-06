@@ -12,28 +12,28 @@ const Navbar = () => {
                 <nav className="navbar">
                     <ul className="nav__list nav__list--primary">
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/blog">Blog</NavLink>
+                            <NavLink className="nav__link" activeClassName="active" to="/blog">Blog</NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/about">Podcast</NavLink>
+                            <NavLink className="nav__link" activeClassName="active" to="/about">Podcast</NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/login">Job Board</NavLink>
+                            <NavLink className="nav__link" activeClassName="active" to="/login">Job Board</NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/">Donate</NavLink>
+                            <NavLink className="nav__link" activeClassName="active" to="/">Donate</NavLink>
                         </li>
                     </ul>
                     <ul className="nav__list nav__list--secondary">
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/">English 
+                            <NavLink className="nav__link" activeClassName="active" to="/login">English 
                                 <span className="caret-icon">
                                     <FaCaretDown />
                                 </span>
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/login">Login</NavLink>
+                            <NavLink className="nav__link" activeClassName="active" to="/login">Login</NavLink>
                         </li>
                         <Link to="/sign-up">
                             <button className="btn btn--primary">
