@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaMedium } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import bannerimg from "../../resources/images/Hero Image.png";
+import bannerimg from "../../resources/images/Blog Image.png";
 import "./style.css";
 import { useState } from "react";
 
