@@ -3,16 +3,18 @@
 }
 
 .blog-banner-texts {
-    width: 45%;
+    /* width: 100%; */
+    flex-basis: 50%;
 }
 
 .blog-main-text {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     color: #4c1d95;
 }
 
 .blog-banner-img {
-    width: 45%;
+    /* width: 100%; */
+    flex-basis: 50%;
 }
 
 .sm-links-buttons {
@@ -67,4 +69,13 @@
 
 .span-list:hover {
     opacity: 0.8;
+}
+
+#blog-posts {
+    padding-top: 3em 0;
+}
+
+.ui-list {
+    color: #7c3aed;
+    text-decoration: underline 2px;
 }
