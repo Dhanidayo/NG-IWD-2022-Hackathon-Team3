@@ -1,16 +1,36 @@
+.blog-details {
+  background-color: #4c1d95;
+  color: #fff;
+  width: 100%;
+}
+
+article {
+  width: 50%;
+  border: 5px dashed #e9e4ff;
+  padding: 2em;
+  margin: auto;
+}
+
 .blog-details h2 {
     font-size: 20px;
-    color: #4c1d95;
-    margin-bottom: 10px;
-  }
-  .blog-details div {
-    margin: 20px 0;
-  }
-  .blog-details button {
-    background: #4c1d95;
     color: #fff;
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+    margin-bottom: 10px;
+}
+
+.author {
+  color: #fcba11;
+}
+
+.blog-details div {
+  margin: 20px 0;
+  line-height: 3;
+}
+
+.blog-details button {
+  background: #4c1d95;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
