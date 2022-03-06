@@ -4,7 +4,7 @@
 
 .blog-banner-texts {
     /* width: 100%; */
-    flex-basis: 50%;
+    flex-basis: 100%;
 }
 
 .blog-main-text {
@@ -14,7 +14,11 @@
 
 .blog-banner-img {
     /* width: 100%; */
-    flex-basis: 50%;
+    flex-basis: 100%;
+}
+
+.right-banner-image {
+    margin-left: 6.7em;
 }
 
 .sm-links-buttons {
@@ -78,4 +82,9 @@
 .ui-list {
     color: #7c3aed;
     text-decoration: underline 2px;
+}
+
+.blog-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

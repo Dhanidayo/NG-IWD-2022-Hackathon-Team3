@@ -7,7 +7,7 @@ const Navbar = () => {
         <header>
             <div className="container--primary row">
                 <Link className='logo nav__link' to="/">
-                    GIRLS-IN-TECH
+                    AFRO-IN-TECH
                 </Link>
                 <nav className="navbar">
                     <ul className="nav__list nav__list--primary">

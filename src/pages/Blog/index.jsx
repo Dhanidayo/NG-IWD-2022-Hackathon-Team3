@@ -1,7 +1,8 @@
 import DefaultLayout from "../../components/Layout";
-import { useState } from "react";
-import useFetch from '../../Hooks/useFetch';
+import { useState, useContext } from "react";
+// import useFetch from '../../Hooks/useFetch';
 import BlogList from '../../components/BlogList';
+import { AppContext } from "../../components/stateprovider";
 
 import { Link } from "react-router-dom";
 import { FaMedium } from "react-icons/fa";
@@ -12,7 +13,8 @@ import "./style.css";
 
 const Blog = () => {
     const [currentlyViewing, setCurrentlyViewing] = useState('ui-design');
-    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    // const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    const { state } = useContext(AppContext);
 
     const viewSection = (section) => {
         setCurrentlyViewing(section);
@@ -49,7 +51,7 @@ const Blog = () => {
                             </div>
                         </div>
                         <div className="blog-banner-img">
-                            <img src={bannerimg} alt="" />
+                            <img className="right-banner-image" src={bannerimg} alt="" />
                         </div>
                     </div>
                 </div>
@@ -81,46 +83,64 @@ const Blog = () => {
                             </div>
                             {currentlyViewing === "ui-design" &&
                                 <section>
-                                    <div className="ui-design">
+                                    <div className="ui-design blog-card">
                                         {/* outputting error on the webpage */}
-                                        { error && <div>{ error }</div>}
+                                        {/* { error && <div>{ error }</div>}
                                         { isPending && <div>Loading...</div> }
-                                        { blogs && <BlogList blogs={blogs} /> }
+                                        { blogs && <BlogList blogs={blogs} /> } */}
+                                        {state.blogs.map(blog => {
+                                            return <BlogList blog={blog} key={blog.id} />
+                                        })}
                                     </div>
                                 </section>
                             }
                             {currentlyViewing === "all" &&
                                 <section>
-                                    <div className="all">
-                                        All blog Posts
+                                    <div className="all blog-card">
+                                        {/* All blog Posts */}
+                                        {state.blogs.map(blog => {
+                                            return <BlogList blog={blog} key={blog.id} />
+                                        })}
                                     </div>
                                 </section>
                             }
                             {currentlyViewing === "development" &&
                                 <section>
-                                    <div className="development">
-                                        Software Development blog Posts
+                                    <div className="development blog-card">
+                                        {/* Software Development blog Posts */}
+                                        {state.blogs.map(blog => {
+                                            return <BlogList blog={blog} key={blog.id} />
+                                        })}
                                     </div>
                                 </section>
                             }
                             {currentlyViewing === "cybersecurity" &&
                                 <section>
-                                    <div className="cybersecurity">
-                                        Cybersecurity blog Posts
+                                    <div className="cybersecurity blog-card">
+                                        {/* Cybersecurity blog Posts */}
+                                        {state.blogs.map(blog => {
+                                            return <BlogList blog={blog} key={blog.id} />
+                                        })}
                                     </div>
                                 </section>
                             }
                             {currentlyViewing === "data-sci" &&
                                 <section>
-                                    <div className="data--sci">
-                                        Data Science blog Posts
+                                    <div className="data--sci blog-card">
+                                        {/* Data Science blog Posts */}
+                                        {state.blogs.map(blog => {
+                                            return <BlogList blog={blog} key={blog.id} />
+                                        })}
                                     </div>
                                 </section>
                             }
                             {currentlyViewing === "others" &&
                                 <section>
-                                    <div className="other">
-                                        other blog Posts
+                                    <div className="other blog-card">
+                                        {/* other blog Posts */}
+                                        {state.blogs.map(blog => {
+                                            return <BlogList blog={blog} key={blog.id} />
+                                        })}
                                     </div>
                                 </section>
                             }

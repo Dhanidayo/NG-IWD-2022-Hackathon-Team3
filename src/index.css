@@ -35,6 +35,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   padding: .5em 1.5em;
   font-size: 1rem;
@@ -52,7 +56,7 @@ img {
   }
 }
 
-.btn:hover {
+button:hover {
   opacity: 0.85;
 }
 

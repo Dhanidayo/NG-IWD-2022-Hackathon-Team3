@@ -1,7 +1,47 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { useForm } from "react-hook-form";
+import { AppContext } from "../../components/stateprovider";
+import { toast } from 'react-toastify';
 import "./style.css";
 
+
 const Login = () => {
+    const context = useContext(AppContext);
+    const { register, handleSubmit } = useForm();
+    const navigate = useNavigate();
+
+    const loginUser = ({ email, password }) => {
+        let user = null;
+
+        //first check if a user exists
+        if (localStorage.getItem(email)) {
+            user = JSON.parse(localStorage.getItem(email));
+        }
+
+        if (!user) {
+            return toast.error("An account for this email does not exist");
+        }
+        const userData = user;
+        console.log(userData);
+
+        if (password !== userData.password) {
+            return toast.error("Invalid credentials");
+        }
+        
+        toast.success("Login Successful for " + email);
+
+        context.dispatch({
+            type: 'LOGIN',
+            payload: {
+                isLoggedIn: true,
+                userEmail: userData.email,
+            },
+        });
+        navigate('/home');
+    }
+
+
     return (
         <div className="login-page">
             {/* <div className="container--primary"> */}
@@ -13,9 +53,9 @@ const Login = () => {
                                 Login to your account
                             </p>
 
-                            <div className="input-fields">
-                                <input type="text" name="email" id="email" className="text-field" placeholder="Email/Phone Number" />
-                                <input type="text" name="password" id="password" className="text-field" placeholder="Password" />
+                            <form onSubmit={handleSubmit(loginUser)} className="input-fields">
+                                <input type="text" name="email" id="email" className="text-field" placeholder="Email" required {...register('email')} />
+                                <input type="text" name="password" id="password" className="text-field" placeholder="Password" required {...register('password')} />
 
                                 <div className="flex-checkbox">
                                     <div className="remember-check">
@@ -29,11 +69,11 @@ const Login = () => {
                                 </div>
 
                                 <div className="btn-field">
-                                    <button className="btn--primary text-field">
+                                    <button type="submit" className="btn--primary text-field">
                                         Login
                                     </button>
                                 </div>
-                            </div>
+                            </form>
 
                             <p className="last-para">
                                 No account yet? <Link className="login-link" to="/sign-up">Sign up</Link>

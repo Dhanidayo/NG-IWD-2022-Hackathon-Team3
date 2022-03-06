@@ -1,0 +1,85 @@
+.home-page {
+    font-weight: bold;
+}
+
+
+.home-content {
+    margin-right: 4em;
+}
+
+.text-row {
+    display: flex;
+    width: 90%;
+    /* border: 2px solid yellow; */
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.text-row a {
+    color: #7c3aed;
+    text-decoration: none;
+}
+
+.text-row a:hover {
+    text-decoration: underline;
+}
+
+.mentors-subheading-text {
+    padding: 1em 1em 0;
+    font-size: 1.2rem;
+}
+
+.username-card {
+    width: 90%;
+	background-color: #fff;
+	border-radius: 1em;
+	box-shadow: 0px 13px 15px 5px #ededed;
+	text-align: left;
+    color: #4c1d95;
+    font-weight: bold;
+	padding: .5em 4em .5em 1em;
+}
+
+.username {
+    color: #000;
+}
+
+.username-span {
+    color: #4c1d95;
+}
+
+.user-mail {
+    margin-top: -1em;
+}
+
+.mentor-role {
+    display: flex;
+    /* justify-content: space-between; */
+    align-content: center;
+    color: #000;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+.mentor-role span {
+    margin-left: .3em;
+}
+
+.topic-title , .topic-date {
+    color: #000;
+    font-weight: normal;
+}
+
+.topic-date {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.read-more {
+    color: #7c3aed;
+    font-weight: normal;
+}
+
+.hot-topic-card {
+    padding-bottom: 1em;
+}

@@ -1,0 +1,23 @@
+.sidebar {
+    border: 2px solid #ccc;
+    width: 22rem;
+    padding: 2em 0 12em;
+    /* border-top: none; */
+    position: fixed;
+}
+
+.sidebar-list {
+    text-align: center;
+}
+
+.sidebar-list-item {
+    list-style: none;
+    font-size: 1.7rem;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.sidebar-list-item:hover {
+    color: #7c3aed;
+}
+
