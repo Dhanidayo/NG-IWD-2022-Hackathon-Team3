@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins';
   font-size: 16px;
 }
 
@@ -12,6 +12,7 @@ body {
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
+  /* border: 5px solid red; */
 }
 
 .container--secondary {
@@ -23,6 +24,7 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
 .col {
@@ -36,6 +38,7 @@ img {
 .btn {
   padding: .5em 1.5em;
   font-size: 1rem;
+  font-weight: 700;
   border-radius: 9px;
   cursor: pointer;
   outline: none;
@@ -58,7 +61,20 @@ img {
   color: #fff;
 }
 
+.btn--secondary {
+  padding: .4em 1.5em;
+  background-color: transparent;
+  border: 2px solid #4c1d95;
+  color: #4c1d95;
+}
+
+.btn--primary__white {
+  background-color: #fff;
+  color: #4c1d95;
+}
+
 .body-text {
   font-size: 1.2rem;
   line-height: 1.5rem;
+  font-weight: 600;
 }

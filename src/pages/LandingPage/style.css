@@ -32,6 +32,7 @@
     font-size: 4rem;
     line-height: 5rem;
     color: #4c1d95;
+    font-weight: 900;
 }
 
 .main-para {
@@ -48,10 +49,15 @@
     font-size: 2rem;
     text-align: center;
     color: #4c1d95;
+    font-weight: 700;
 }
 
 .cards-container {
     display: flex;
+    /* border: 3px solid yellowgreen; */
+    
+    width: max-content;
+    margin: auto;
 }
 
 .flex-cards {
@@ -60,17 +66,198 @@
 }
 
 .card {
-    width: 16rem;
-	height: 22.5rem;
+    width: 18rem;
+	/* height: 24rem; */
 	background-color: #fff;
 	border: 1px solid #f5f5f5;
-	border-radius: 0.6em;
+	border-radius: 2.5em;
 	text-align: center;
-	/* box-shadow: 0px 13px 5px -10px #888; */
-	padding: 2em;
+	padding: 2.5em;
+    margin: 2em 1em;
 }
 
 .illustration-image {
     width: 120px;
     height: 120px;
+}
+
+.flex-end-card {
+    padding-top: 12rem;
+}
+
+.card-title, .card-text {
+    line-height: 1.4;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+
+#events-section {
+    background-color: #FFF;
+    padding: 5em 0;
+}
+
+.sub-heading--left {
+    text-align: left;
+}
+
+.image-col {
+    padding-top: 5em;
+}
+
+.events-section-content {
+    margin: 2em auto;
+}
+
+
+
+#partner-section {
+    background-color: #e9e4ff;
+}
+
+.flex-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 20rem;
+    margin: 3em 0;
+}
+
+.partner-section-texts {
+    align-self: center;
+    /* margin: auto; */
+}
+
+
+#apply-section {
+    background: url("../../resources/images/Mentorship\ Background.png") no-repeat right center;
+    background-size: cover;
+    background-color: #4c1d95;
+    height: 39.5rem;
+    padding: 2em 0;
+}
+
+.apply-section-contents {
+    padding: 3.5em 0;
+}
+
+.apply-section-texts {
+    width: 45%;
+    /* border: 2px solid yellow; */
+}
+
+.sub-heading--yellow {
+    color: #fcba11;
+}
+
+.body-text-white {
+    color: #fff;
+}
+
+
+.image-card {
+    width: 20rem;
+	/* height: 24rem; */
+	background-color: #fff;
+	border-radius: 1em;
+	box-shadow: 0px 13px 15px 5px #ededed;
+	text-align: left;
+    color: #4c1d95;
+    font-weight: 600;
+	/* padding: 2.5em; */
+    margin: 2em 1em;
+}
+
+.image-card--none {
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-image {
+    width: 360px;
+    border-top-right-radius: .8em;
+    border-top-left-radius: .8em;
+}
+
+.mentor-info {
+    padding: 0 1em;
+}
+
+.arrow-icon {
+    padding: .5em;
+}
+
+
+
+#feedback-section {
+    padding: 5em 0;
+}
+
+.small-text {
+    color: #7c3aed;
+    margin-top: -1em;
+}
+
+.feedback-cards-wrapper {
+    display: flex;
+}
+
+.feedback-card {
+    width: 22.5rem;
+	/* height: 24rem; */
+	background-color: #fff;
+	border-radius: .7em;
+	text-align: left;
+    color: #fff;
+    font-weight: 600;
+	padding: 1em 2em;
+    margin: 2em 1em;
+
+    display: flex;
+}
+
+.align-feedback-card {
+    padding-top: 10em;
+}
+
+.quote-mark {
+    font-size: 3rem;
+    padding-right: .3em;
+    justify-self: flex-start;
+    margin-top: .1em;
+}
+
+.feedback-card--primary {
+    background-color: #7c3aed;
+    border: none;
+}
+
+.feedback-card--secondary {
+    background-color: #fcba11;
+    color: #000;
+    border: none;
+}
+
+.feedback-card--black {
+    background-color: #000;
+    border: none;
+}
+
+.body-text-thin {
+    font-weight: normal;
+}
+
+.testifier-role {
+    font-weight: normal;
+    font-size: .8rem;
+    margin-top: -1em;
 }
