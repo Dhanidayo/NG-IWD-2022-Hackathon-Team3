@@ -10,10 +10,16 @@ The Figma link to view the prototypes and wireframes for this project is: https:
 ##Features
 
 Registration
+
 Join women Community
+
 Create and explore tech blog posts
+
 explore career opportunities
+
 Tech Mnetorship
+
+Podcast
 
 ## Available Scripts
 
