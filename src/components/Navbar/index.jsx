@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import "./style.css";
+import { FaCaretDown } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
@@ -14,10 +15,10 @@ const Navbar = () => {
                             <NavLink className="nav__link" to="/blog">Blog</NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/about">About Us</NavLink>
+                            <NavLink className="nav__link" to="/about">Podcast</NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/login">Contact Us</NavLink>
+                            <NavLink className="nav__link" to="/login">Job Board</NavLink>
                         </li>
                         <li className="nav__item">
                             <NavLink className="nav__link" to="/">Donate</NavLink>
@@ -25,7 +26,14 @@ const Navbar = () => {
                     </ul>
                     <ul className="nav__list nav__list--secondary">
                         <li className="nav__item">
-                            <NavLink className="nav__link" to="/">English</NavLink>
+                            <NavLink className="nav__link" to="/">English 
+                                <span className="caret-icon">
+                                    <FaCaretDown />
+                                </span>
+                            </NavLink>
+                        </li>
+                        <li className="nav__item">
+                            <NavLink className="nav__link" to="/login">Login</NavLink>
                         </li>
                         <Link to="/sign-up">
                             <button className="btn btn--primary">

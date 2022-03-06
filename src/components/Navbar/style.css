@@ -36,6 +36,10 @@ header {
     text-decoration: none;
 }
 
-.nav__item NavLink:hover {
-    opacity: .75;
+.nav__link:hover {
+    opacity: 0.8;
 }
+
+/* span.caret-icon {
+    margin-top: .3em;
+} */
