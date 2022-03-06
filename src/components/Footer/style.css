@@ -41,8 +41,10 @@ footer {
 .sm-icon {
     display: flex;
     flex-direction: row;
-    width: 6rem;
-    justify-content: space-between;
+    font-size: 1.7rem;
+    justify-content: space-around;
+
+    padding: 0 1.7em;
 }
 
 .copyright {
