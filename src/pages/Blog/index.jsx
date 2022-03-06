@@ -1,14 +1,18 @@
 import DefaultLayout from "../../components/Layout";
+import { useState } from "react";
+import useFetch from '../../Hooks/useFetch';
+import BlogList from '../../components/BlogList';
+
 import { Link } from "react-router-dom";
 import { FaMedium } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import bannerimg from "../../resources/images/Blog Image.png";
 import "./style.css";
-import { useState } from "react";
 
 const Blog = () => {
     const [currentlyViewing, setCurrentlyViewing] = useState('ui-design');
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
     const viewSection = (section) => {
         setCurrentlyViewing(section);
@@ -53,13 +57,12 @@ const Blog = () => {
                 <div id="blog-posts">
                     <div className="container--primary">
                         <div className="blog-post-container">
-                            <h2 className="blog-main-text">All Blogs</h2>
                             <div className="inline-headlist">
                                 <ul>
                                     <li onClick={() => viewSection("all")} className="blog-inline-list">
                                         <span className="span-list">All</span>
                                     </li>
-                                    <li onClick={() => viewSection("ui-design")} className="blog-inline-list">
+                                    <li onClick={() => viewSection("ui-design")} className="blog-inline-list ui-list">
                                         <span className="span-list">UI/UX Design</span>
                                     </li>
                                     <li onClick={() => viewSection("development")} className="blog-inline-list">
@@ -79,7 +82,10 @@ const Blog = () => {
                             {currentlyViewing === "ui-design" &&
                                 <section>
                                     <div className="ui-design">
-                                        UI/UX Design blog posts
+                                        {/* outputting error on the webpage */}
+                                        { error && <div>{ error }</div>}
+                                        { isPending && <div>Loading...</div> }
+                                        { blogs && <BlogList blogs={blogs} /> }
                                     </div>
                                 </section>
                             }

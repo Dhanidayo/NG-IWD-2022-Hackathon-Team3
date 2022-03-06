@@ -5,6 +5,7 @@ import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import BlogDetails from './components/BlogDetails';
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/reset-password" element={ <ResetPassword /> } />
           <Route path="about" element={ <About /> } />
           <Route path="/blog" element={ <Blog /> } />
+          <Route path="/blogs/:id" element={ <BlogDetails /> } />
           <Route path="/landing-page" element={ <LandingPage /> } />
           <Route path="/" element={ <LandingPage /> } />
           <Route path="*" element={ <NotFound /> } />      
