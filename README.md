@@ -1,8 +1,15 @@
 # AFRO-IN-TECH WEB APPLICATION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This project is hosting on Vercel with the following link: http://ng-iwd-2022-hackathon-team3.vercel.app/
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). /n
+This project is hosting on Vercel with the following link: http://ng-iwd-2022-hackathon-team3.vercel.app/ /n
 The Figma link to view the prototypes and wireframes for this project is: https://www.figma.com/file/mu3AH7o42YIgRSE9qUxDjZ/Hackathon?node-id=0%3A1
+
+##Features
+Registration
+Join women Community
+Create and explore tech blog posts
+explore career opportunities
+Tech Mnetorship
 
 ## Available Scripts
 
