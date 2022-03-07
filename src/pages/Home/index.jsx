@@ -21,8 +21,8 @@ const Home = () => {
                 </div>
                 <div className="home-content">
                     <div className="username-card">
-                        <h1 className="username">Hello, <span className="username-span">Bimbo Thomas!</span></h1>
-                        <p className="user-mail">bimbothomas@gmail.com</p>
+                        <h1 className="username">Hello, <span className="username-span">Alpha!</span></h1>
+                        <p className="user-mail">alpha@gmail.com</p>
                     </div>
                     <div className="mentors-for-you">
                         <div className="text-row">
