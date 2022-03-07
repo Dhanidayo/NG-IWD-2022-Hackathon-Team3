@@ -15,9 +15,11 @@ Join women Community
 
 Create and explore tech blog posts
 
-explore career opportunities
+Explore career opportunities
 
-Tech Mnetorship
+Tech Mentorship - Become a mentor/ Find a mentor
+
+Online Tech Resources
 
 Podcast
 
