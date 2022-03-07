@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# AFRO-IN-TECH WEB APPLICATION
+
+### Presentation Slide
+
+[Afro-in-tech.pdf](https://github.com/Dhanidayo/NG-IWD-2022-Hackathon-Team3/files/8195449/Afro-in-tech.pdf)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project is hosting on Vercel with the following link: http://ng-iwd-2022-hackathon-team3.vercel.app/
+
+
+The Figma link to view the prototypes and wireframes for this project is: https://www.figma.com/file/mu3AH7o42YIgRSE9qUxDjZ/Hackathon?node-id=0%3A1
+
+##Features
+
+Registration
+
+Join women Community
+
+Create and explore tech blog posts
+
+Explore career opportunities
+
+Tech Mentorship - Become a mentor/ Find a mentor
+
+Online Tech Resources
+
+Podcast
 
 ## Available Scripts
 
