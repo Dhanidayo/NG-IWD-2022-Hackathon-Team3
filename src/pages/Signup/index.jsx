@@ -33,7 +33,7 @@ const Signup = () => {
         }
         //save newuser to local storage
         localStorage.setItem(email, JSON.stringify(newUser));
-        toast.success("Your account has been created successfully!");
+        toast.success("Your account has been created successfully! Please login");
 
         context.dispatch({
             type: 'SIGNUP',
@@ -42,7 +42,7 @@ const Signup = () => {
                 userEmail: newUser.email,
             },
         });
-        navigate('/home');
+        navigate('/login');
     }
 
 
