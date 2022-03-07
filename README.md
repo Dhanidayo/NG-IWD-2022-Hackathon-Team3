@@ -1,5 +1,9 @@
 # AFRO-IN-TECH WEB APPLICATION
 
+### Presentation Slide
+
+[Afro-in-tech.pdf](https://github.com/Dhanidayo/NG-IWD-2022-Hackathon-Team3/files/8195449/Afro-in-tech.pdf)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project is hosting on Vercel with the following link: http://ng-iwd-2022-hackathon-team3.vercel.app/
