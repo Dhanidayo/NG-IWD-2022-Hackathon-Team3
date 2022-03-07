@@ -1,13 +1,14 @@
 import { Link, NavLink } from 'react-router-dom';
 import "./style.css";
 import { FaCaretDown } from 'react-icons/fa';
+import logo from "../../resources/illustration-images/Afro-In-Tech.png";
 
 const Navbar = () => {
     return (
         <header>
             <div className="container--primary row">
                 <Link className='logo nav__link' to="/">
-                    AFRO-IN-TECH
+                    <img src={logo} alt="" />      
                 </Link>
                 <nav className="navbar">
                     <ul className="nav__list nav__list--primary">

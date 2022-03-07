@@ -33,7 +33,7 @@ const Blog = () => {
                                 Why are we doing this?
                             </h2>
                             <p className="body-text-thin">
-                                In order to close the ever-growing gender gap in the tech space, we are encouraging you as a lady to take up take careers.
+                                In order to close the ever-growing gender gap in the tech space, we are encouraging you as a lady to take up tech careers.
                             </p>
                             <p className="body-text-thin">
                                 With our blog, we want young girls to see that pursuing a career in tech is achieveable, and they should be encouraged when they have interest in tech/STEM courses.
