@@ -10,6 +10,12 @@
     padding: 2em 0;
 }
 
+@media screen and (max-width: 1026px) {
+    #banner {
+        height: 36rem;
+    }
+}
+
 /* .banner-contents-wrapper {
     border: 4px solid green;
 }
@@ -34,6 +40,13 @@
     color: #4c1d95;
     font-weight: 900;
 }
+
+@media screen and (max-width: 1026px) {
+    .main-text{
+        font-size: 3rem;
+        line-height: 4.3rem;
+    }
+  }
 
 .main-para {
     margin-bottom: 2em;
@@ -76,10 +89,23 @@
     margin: 2em 1em;
 }
 
+@media screen and (max-width: 1026px) {
+    .card {
+        width: 16rem;
+    }
+  }
+
 .illustration-image {
     width: 120px;
     height: 120px;
 }
+
+@media screen and (max-width: 1026px) {
+    .illustration-image {
+        width: 100px;
+        height: 100px;
+    }
+  }
 
 .flex-end-card {
     padding-top: 12rem;
@@ -224,6 +250,12 @@
 
     display: flex;
 }
+
+@media screen and (max-width: 1922px) {
+    .feedback-card {
+        width: 22rem;
+    }
+  }
 
 .align-feedback-card {
     padding-top: 10em;
