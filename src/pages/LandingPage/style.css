@@ -16,6 +16,7 @@
     }
 }
 
+
 /* .banner-contents-wrapper {
     border: 4px solid green;
 }
@@ -48,10 +49,29 @@
     }
   }
 
+  @media screen and (max-width: 976px) {
+   .main-text {
+       font-size: 2.5rem;
+   }
+  }
+
 .main-para {
     margin-bottom: 2em;
 }
 
+.main-para-d-none {
+    display: none;
+}
+
+@media screen and (max-width: 976px) {
+    .main-para {
+        display: none;
+    }
+    
+    .main-para-d-none {
+        display: block;
+    }
+}
 
 #benefits-section {
     background-color: #f3f0ff;
@@ -118,6 +138,16 @@
 .card-title {
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 976px) {
+    .card-text {
+        font-size: .85rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
 }
 
 
@@ -199,6 +229,12 @@
     margin: 2em 1em;
 }
 
+@media screen and (max-width: 976px) {
+    .image-card {
+        font-size: .85rem;
+    }
+   }
+
 .image-card--none {
     border: none;
     box-shadow: none;
@@ -255,7 +291,17 @@
     .feedback-card {
         width: 22rem;
     }
-  }
+}
+
+@media screen and (max-width: 976px) {
+    .feedback-card {
+        width: 20rem;
+    }
+
+    .feedback-card-text {
+        font-size: .85rem;
+    }
+}
 
 .align-feedback-card {
     padding-top: 10em;

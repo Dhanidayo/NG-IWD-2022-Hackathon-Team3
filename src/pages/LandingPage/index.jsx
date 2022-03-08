@@ -30,6 +30,9 @@ const LandingPage = () => {
                                 <p className="main-para body-text">
                                     Become a part of our community and get unlimited <br/> access to resources, mentors, and connect with <br /> other women like you who are changing the world.
                                 </p>
+                                <p className="main-para-d-none body-text">
+                                    Become a part of our community and get <br />unlimited access to resources, mentors, <br />and connect with other women like you <br /> who are changing the world.
+                                </p>
                                 <Link to="/">
                                     <button className=" btn btn--primary">
                                         Get Started
@@ -266,7 +269,7 @@ const LandingPage = () => {
                                     <div className="feedback-card feedback-card--primary">
                                         <p className="quote-mark">"</p>
                                         <div>
-                                            <p className="body-text-thin">
+                                            <p className="body-text-thin feedback-card-text">
                                                 This program is mind blowing and the effort put into ensuring that newbies get better and gain clarity in their chosen career path is quite commendable. In just six months, I have grown so much. I recommend this to as many women as possible.
                                             </p>
                                             <p className="testifier-name">Sarah Adebesin</p>
@@ -278,7 +281,7 @@ const LandingPage = () => {
                                     <div className="feedback-card feedback-card--secondary">
                                         <p className="quote-mark">"</p>
                                         <div>
-                                            <p className="body-text-thin">
+                                            <p className="body-text-thin feedback-card-text">
                                                The mentorship program was the start of my tech journey and I'm better for it. I recently got a job with a leading company in Africa and that happened because someone shared the recruitment link on the opportunities/job page.
                                             </p>
                                             <p className="testifier-name">Rahmot Afolabi</p>
@@ -288,7 +291,7 @@ const LandingPage = () => {
                                     <div className="feedback-card feedback-card--black">
                                         <p className="quote-mark">"</p>
                                         <div>
-                                            <p className="body-text-thin">
+                                            <p className="body-text-thin feedback-card-text">
                                                 Being in a community of other women like me helped me realise that I'm not alone in my tech journey.
                                             </p>
                                             <p className="testifier-name">Favour Ezichi</p>

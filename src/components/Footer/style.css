@@ -68,3 +68,9 @@ footer {
         margin-right: 2em;
     }
 }
+
+@media screen and (max-width: 976px) {
+    .copyright {
+        font-size: .85rem;
+    }
+   }

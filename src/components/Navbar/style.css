@@ -4,6 +4,13 @@ header {
     font-size: 1rem;
 }
 
+@media screen and (max-width: 976px) {
+    header {
+        font-size: .85rem;
+        padding: 1.5em 0;
+    }
+  }
+
 .logo {
     margin-right: 2em;
     align-self: center;
