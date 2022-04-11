@@ -28,11 +28,11 @@ const LandingPage = () => {
                                     Life-changing<br /> Opportunities
                                 </h1>
                                 <p className="main-para body-text">
-                                    Become a part of our community and get unlimited <br/> access to resources, mentors, and connect with <br /> other women like you who are changing the world.
+                                    Become a part of our community and get unlimited access to resources, mentors, and connect with  other women like you who are changing the world.
                                 </p>
-                                <p className="main-para-d-none body-text">
-                                    Become a part of our community and get <br />unlimited access to resources, mentors, <br />and connect with other women like you <br /> who are changing the world.
-                                </p>
+                                {/* <p className="main-para-d-none body-text">
+                                    Become a part of our community and get unlimited access to resources, mentors, and connect with other women like you who are changing the world.
+                                </p> */}
                                 <Link to="/">
                                     <button className=" btn btn--primary">
                                         Get Started
@@ -48,68 +48,70 @@ const LandingPage = () => {
 
                 <section id="benefits-section">
                     <div className="container--primary">
-                        <h2 className="sub-heading">
-                            What our members benefit
-                        </h2>
-                        <div className="cards-container">
-                            <div className="flex-cards flex-end-card">
-                                <div className="card">
-                                    <img className="illustration-image" src={mentorsillustration} alt=""  />
-                                    <p className="card-title">
-                                        Connect to career <br /> mentors
-                                    </p>
-                                    <p className="card-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
-                                    </p>
+                        <div className="benefits-section-wrapper">
+                            <h2 className="sub-heading">
+                                What our members benefit
+                            </h2>
+                            <div className="cards-container">
+                                <div className="flex-cards flex-end-card">
+                                    <div className="card">
+                                        <img className="illustration-image" src={mentorsillustration} alt=""  />
+                                        <p className="card-title">
+                                            Connect to career <br /> mentors
+                                        </p>
+                                        <p className="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
+                                        </p>
+                                    </div>
+                                    <div className="card">
+                                        <img className="illustration-image"  src={mentorsillustration} alt=""  />
+                                        <p className="card-title">
+                                            Working with <br /> other techsters
+                                        </p>
+                                        <p className="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className="card">
-                                    <img className="illustration-image"  src={mentorsillustration} alt=""  />
-                                    <p className="card-title">
-                                        Working with <br /> other techsters
-                                    </p>
-                                    <p className="card-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
-                                    </p>
+                                <div className="flex-cards">
+                                    <div className="card">
+                                        <img className="illustration-image"  src={noteillustration} alt=""  />
+                                        <p className="card-title">
+                                            Unlimited <br /> resources
+                                        </p>
+                                        <p className="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
+                                        </p>
+                                    </div>
+                                    <div className="card">
+                                        <img className="illustration-image"  src={noteillustration} alt=""  />
+                                        <p className="card-title">
+                                            Weekly trainings <br /> and projects
+                                        </p>
+                                        <p className="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex-cards">
-                                <div className="card">
-                                    <img className="illustration-image"  src={noteillustration} alt=""  />
-                                    <p className="card-title">
-                                        Unlimited <br /> resources
-                                    </p>
-                                    <p className="card-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
-                                    </p>
-                                </div>
-                                <div className="card">
-                                    <img className="illustration-image"  src={noteillustration} alt=""  />
-                                    <p className="card-title">
-                                        Weekly trainings <br /> and projects
-                                    </p>
-                                    <p className="card-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex-cards flex-end-card">
-                                <div className="card">
-                                    <img className="illustration-image"  src={briefcaseillustration} alt=""  />
-                                    <p className="card-title">
-                                        Job Opportunities <br /> and Career <br /> Roadmaps
-                                    </p>
-                                    <p className="card-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
-                                    </p>
-                                </div>
-                                <div className="card">
-                                    <img className="illustration-image"  src={briefcaseillustration} alt=""  />
-                                    <p className="card-title">
-                                        Scholarship and <br /> Internships
-                                    </p>
-                                    <p className="card-text">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
-                                    </p>
+                                <div className="flex-cards flex-end-card">
+                                    <div className="card">
+                                        <img className="illustration-image"  src={briefcaseillustration} alt=""  />
+                                        <p className="card-title">
+                                            Job Opportunities <br /> and Career <br /> Roadmaps
+                                        </p>
+                                        <p className="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
+                                        </p>
+                                    </div>
+                                    <div className="card">
+                                        <img className="illustration-image"  src={briefcaseillustration} alt=""  />
+                                        <p className="card-title">
+                                            Scholarship and <br /> Internships
+                                        </p>
+                                        <p className="card-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, tempora officiis mollitia ullam fugiat dolores.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -118,16 +120,16 @@ const LandingPage = () => {
 
                 <section id="events-section">
                     <div className="container--primary">
-                        <div className="row events-container">
-                            <div>
+                        <div className="row">
+                            <div className="section-content">
                                 <h2 className="sub-heading sub-heading--left">
                                     Attend an event
                                 </h2>
-                                <p className="body-text events-section-content">
-                                    Participate in any of our online or offline events <br /> and initiatives including bootcamps, Fireside chats <br />
+                                <p className="body-text events">
+                                    Participate in any of our online or offline events and initiatives including bootcamps, Fireside chats,
                                     webinars, Mentorship programs and several more!
                                 </p>
-                                <Link className="events-section-content" to="/">
+                                <Link className="events-button" to="/">
                                     <button className="btn btn--primary">
                                         View Upcoming Events
                                     </button>
@@ -146,10 +148,10 @@ const LandingPage = () => {
                             <div>
                                 <img className="partner-image" src={partnershipimage} alt="" />
                             </div>
-                            <div className="partner-section-texts">
+                            <div className="section-content partner-content">
                                 <h2 className="sub-heading sub-heading--left">Partner with us</h2>
                                 <p className="body-text">
-                                    Be a sponsor for our next event via a donation or <br /> partner with our organization to reach more <br />women in tech across Africa.
+                                    Be a sponsor for our next event via a donation or partner with our organization to reach more women in tech across Africa.
                                 </p>
                                 <div className="flex-btns">
                                     <Link to="/">
@@ -171,7 +173,7 @@ const LandingPage = () => {
                 <section id="apply-section">
                     <div className="container--primary">
                         <div className="row apply-section-contents">
-                            <div className="apply-section-texts">
+                            <div className="section-content">
                                 <h2 className="sub-heading sub-heading--left sub-heading--yellow">
                                     Apply to become a <br /> mentor
                                 </h2>
